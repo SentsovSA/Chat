@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class ServerApp {
 
-    private static final int DEFAULT_PORT = 8888;
+    private static final int DEFAULT_CHAT_PORT = 8888;
 
     public static void main(String[] args) {
-        int port = DEFAULT_PORT;
+        int port = DEFAULT_CHAT_PORT;
 
         if (args.length != 0){
             port = Integer.parseInt(args[0]);
