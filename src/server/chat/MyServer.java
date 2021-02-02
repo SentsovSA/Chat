@@ -75,4 +75,12 @@ public class MyServer {
             client.sendMessage(sender.getUsername(), message);
         }
     }
+
+    public synchronized void sendPrivateMSG(ClientHandler sender, String recipient, String privateMSG) throws IOException {
+        for (ClientHandler client : clients) {
+            if (client.getUsername().equals(recipient)){
+                client.sendMessage(sender.getUsername(), privateMSG);
+            }
+        }
+    }
 }

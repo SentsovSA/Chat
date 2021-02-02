@@ -23,12 +23,12 @@ public class BaseAuthService implements AuthService {
     }
 
     @Override
-    public void startAuthentication() {
+    public void startOfAuthentication() {
         System.out.println("Authentication starting");
     }
 
     @Override
-    public void endAuthentication() {
+    public void endOfAuthentication() {
         System.out.println("Authentication ending");
     }
 }
